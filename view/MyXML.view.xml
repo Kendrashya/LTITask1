@@ -1,0 +1,114 @@
+<tango:View xmlns:tango="sap.ui.core.mvc" 
+xmlns="sap.m"
+xmlns:newton="sap.ui.core"
+xmlns:form="sap.ui.layout.form"
+xmlns:table="sap.ui.table"
+xmlns:core="sap.ui.core"
+
+controllerName="scooby.controller.MyXML">
+    
+
+        <table:Table rows="{/empTab/row}" rowSelectionChange="onRowSel" selectionMode="Single" visibleRowCount="3">
+        <table:columns>
+
+            <table:Column><table:label>
+                <Label text="{i18n>XLBL_EMPID}"></Label>
+            </table:label>
+            <table:template>
+                <Text text="{empId}"></Text>
+            </table:template></table:Column>
+
+
+            <table:Column><table:label>
+                <Label text="{i18n>XLBL_EMPNAME}"></Label>
+            </table:label>
+            <table:template>
+                <Input value="{empName}"></Input>
+            </table:template></table:Column>
+
+
+            <table:Column><table:label>
+                <Label text="{i18n>XLBL_SALARY}"></Label>
+            </table:label>
+                <table:template>
+                    <Text text="{parts: [{path : 'salary'}, {path : 'curr'}], formatter: '.convertCurr'}"></Text>
+                <!-- <Text text="{salary}"></Text> -->
+            </table:template>
+            </table:Column>
+
+
+            <table:Column><table:label>
+                <Label text="{i18n>XLBL_CURR}"></Label>
+            </table:label>
+                <table:template>
+                    <Text text="{curr}"></Text>
+                <!-- <Text text="{parts: [{path : 'salary'}, {path : 'curr'}], formatter: '.convertCurr'}"></Text> -->
+            </table:template>
+            </table:Column>
+
+
+            <table:Column><table:label>
+                <Label text="{i18n>XLBL_SMT}"></Label>
+            </table:label>
+                <table:template>
+                <!-- <CheckBox selected="{smoker}"></CheckBox> -->
+            </table:template>
+            </table:Column>
+
+
+            <table:Column><table:label>
+                <Label text="{i18n>XLBL_MARITAL}"></Label>
+            </table:label>
+            <table:template>
+                <Select selectedKey="{MStatus}">
+                    <items>
+                        <core:Item text="Married" key="Married"></core:Item>
+                        <core:Item text="Unmarried" key="Unmarried"></core:Item>
+                    </items>
+                </Select>
+            </table:template></table:Column>
+
+
+            <table:Column><table:label>
+                <Label text="{i18n>XLBL_RATING}"></Label>
+            </table:label>
+            <table:template>
+                <!-- <RatingIndicator value="{Rating}"></RatingIndicator> -->
+            </table:template></table:Column>
+        </table:columns>
+    </table:Table>
+    <form:SimpleForm editable="true" id="myForm">
+    <form:content>
+    <!-- <Label text="Username"></Label>
+    <Input id="username" width="300px"></Input>
+    <Label text="Password"></Label>
+    <Input id="password" width="300px"></Input>
+    <Button text="Press Me" press="newLogic" id="idZumba"> </Button> -->
+
+    <Label text="{i18n>XLBL_EMPID}"></Label>
+    <Input id="idEmpId" value="{empId}"></Input>
+    <Label text="{i18n>XLBL_EMPNAME}"></Label>
+    <Input id="idEmpName" value="{path: 'empName', 
+                                    formatter: '.magicUC'
+                                                    }">
+                            </Input>
+    <Label text="{i18n>XLBL_SALARY}"></Label>
+    <Input id="idSalary" value="{salary}" editable="{= ${/empStr/salary} > 20000 ? false : true}"></Input>
+    <Label text="{i18n>XLBL_CURR}"></Label>
+    <Input id="idCurr" value="{curr}"></Input>
+    </form:content>
+
+
+
+
+    <form:title >
+        <newton:Title text="Login Data: " ></newton:Title>
+    </form:title>
+</form:SimpleForm>
+    <Button text="{i18n>XBTN_FLIP}" press="onFlip"></Button>
+    
+
+
+    
+
+</tango:View>

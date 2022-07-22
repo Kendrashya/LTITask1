@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<data>
+    <empStr>
+        <empId>100</empId>
+        <empName>sana</empName>
+        <salary>400</salary>
+        <curr>AED</curr>
+    </empStr>
+
+    <empTab>
+        <row>
+            <empId>678</empId>
+            <empName>Hask</empName>
+            <salary>3900</salary>
+            <curr>INR</curr>
+            <smoker>true</smoker>
+            <Mstatus>Unmarried</Mstatus>
+            <rating>4</rating>
+        </row>
+
+        <row>
+            <empId>671</empId>
+            <empName>sad</empName>
+            <salary>342</salary>
+            <curr>fds</curr>
+            <smoker>false</smoker>
+            <Mstatus>Married</Mstatus>
+            <rating>3</rating>
+        </row>
+
+        <row>
+            <empId>234</empId>
+            <empName>JKD</empName>
+            <salary>809</salary>
+            <curr>DFG</curr>
+            <smoker>no</smoker>
+            <Mstatus>Unmarried</Mstatus>
+            <rating>3</rating>
+        </row>
+
+        <row>
+            <empId>1908</empId>
+            <empName>Pichku</empName>
+            <salary>899</salary>
+            <curr>TL</curr>
+            <smoker>true</smoker>
+            <Mstatus>Unmarried</Mstatus>
+            <rating>1</rating>
+        </row>
+
+        <row>
+            <empId>900</empId>
+            <empName>Haider</empName>
+            <salary>7889</salary>
+            <curr>TL</curr>
+            <smoker>true</smoker>
+            <Mstatus>Unmarried</Mstatus>
+            <rating>5</rating>
+        </row>
+    </empTab>
+</data>

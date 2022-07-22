@@ -1,0 +1,59 @@
+{
+	"empStr": {
+		"empId": 100,
+		"empName": "Anubhav",
+		"salary": 1000,
+		"curr": "INR",
+		"smoker": true,
+		"MStatus": "Married",
+		"Rating": 1
+	},
+	"empTab": [{
+			"empId": 100,
+			"empName": "Anubhav",
+			"salary": 1000,
+			"curr": "INR",
+			"smoker": true,
+			"MStatus": "Married",
+			"Rating": 1
+		},
+		{
+			"empId": 101,
+			"empName": "Anubhav2",
+			"salary": 2000,
+			"curr": "pNR",
+			"smoker": false,
+			"MStatus": "Unmarried",
+			"Rating": 2
+		},
+		{
+			"empId": 102,
+			"empName": "Anubhav3",
+			"salary": 3000,
+			"curr": "SNR",
+			"smoker": false,
+			"MStatus": "Married",
+			"Rating": 3
+		},
+		{
+			"empId": 103,
+			"empName": "Anubhav4",
+			"salary": 4000,
+			"curr": "RNR",
+			"smoker": true,
+			"MStatus": "Married",
+			"Rating": 5
+		},
+		{
+			"empId": 104,
+			"empName": "Anubhav5",
+			"salary": 5000,
+			"curr": "TNR",
+			"smoker": true,
+			"MStatus": "Unmarried",
+			"Rating": 4
+		}
+
+	]
+
+}

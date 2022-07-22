@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_bluecrystal"
+        data-sap-ui-resourceRoots='{
+            "scooby":"./"
+        }'
+        data-sap-ui-bindingSyntax='complex'>
+        </script>
+        <!-- <script>
+
+            var input = new sap.m.Input("idInp", {
+                width: "10%"
+            });
+            input.placeAt("inputi")
+        </script> -->
+        
+        <script>
+
+            var oview = new sap.ui.view("viewMain",{
+                viewName: "scooby.view.Main",
+                type: "JS"
+            });
+            
+            var oview2 = new sap.ui.view("idMyXML",{
+                viewName: "scooby.view.MyXML",
+                type: "XML"
+            });
+            
+            oview.placeAt("name");
+            oview2.placeAt("zkas");
+        </script>
+
+        <!-- <script>
+            alert(input)
+        </script> -->
+    </head>
+    <body class="sapUiBody">
+        <!-- <div id="inputi"></div> -->
+        <div id="name"></div>
+        <div id="zkas"></div>
+        
+    </body>
+</html>
